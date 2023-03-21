@@ -1,0 +1,70 @@
+#projects{
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    padding: 0;
+    list-style: none;
+}
+
+#projects li.card{
+    position:relative;
+    box-sizing: border-box;
+    background: rgb(46, 111, 196);
+    width: 350px;
+    height: 350px;
+    padding: 1em;
+}
+
+#projects li.card h2{
+    position: absolute;
+    bottom: 0;
+
+    text-shadow: 0 2px 2px var(--background);
+    font-weight: 900;
+}
+
+
+#projects li.card::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display:block;
+    box-sizing: border-box;
+    width: 350px;
+    height: 350px;
+    padding: 1em;
+    opacity: 0.75;
+
+    transform-origin: left;
+
+    scale: 0 1;
+    transition: all 0.25s ease-out;
+}
+
+#projects li.card:hover::before{
+    scale: 1 1;
+}
+
+#projects li.card:nth-of-type(3n+1):before{
+    background-color: var(--cyan);
+}
+
+#projects li.card:nth-of-type(3n+2):before{
+    background-color: var(--magenta);
+}
+
+#projects li.card:nth-of-type(3n+3):before{
+    background-color: var(--yellow);
+}
+
+/* #projects:nth-child(0) li.card::before{
+    background-color: var(--magenta);
+}
+
+#projects:nth-child(3) li.card::before{
+    background-color: var(--yellow);
+} */

@@ -1,0 +1,40 @@
+header{
+    height: 100vh;
+}
+
+header .container{
+    width: 3em;
+    height: 3em;
+    display: grid;
+    place-items: center;
+}
+
+.arrow{
+    border-bottom: 1px var(--text) solid;
+    border-right: 1px var(--text) solid;
+    width: 2em;
+    height: 2em;
+    rotate: 45deg;
+    cursor: pointer;
+
+    transition: all 0.25s ease-in-out;
+
+    animation: bounce infinite 3s;
+}
+
+@keyframes bounce {
+    0% {
+        transform:translate(0, 0);
+    }
+    75% {
+        transform:translate(10px, 10px);
+    }
+    100% {
+        transform:translate(0, 0);
+    }
+}
+
+.arrow:hover{
+    border-bottom: 6px var(--text) solid;
+    border-right: 6px var(--text) solid;
+}
