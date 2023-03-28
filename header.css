@@ -7,6 +7,21 @@ header .container{
     height: 3em;
     display: grid;
     place-items: center;
+    
+}
+
+header h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    font-size: 4rem;
+    height: 4rem;
+}
+
+header h2{
+    font-size: 3rem;
 }
 
 .arrow{
