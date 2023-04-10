@@ -3,7 +3,8 @@ h1{
     text-shadow: 2px 2px 0px var(--background);
 }
 
-h1::after{
+/* underline */
+/* h1::after{
     content:'';
     background-color: var(--magenta);
     
@@ -16,7 +17,7 @@ h1::after{
     bottom: 1.4em;
     left: 0.2em;
     z-index: -1;
-}
+} */
 
 h2{
     font-size: 1.5rem;

@@ -5,47 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="script.js"></script>
-
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <script defer src="./functions/animateIn.js"></script>
+    <script src="./functions/includeHTML.js"></script>
 
     <title>ethan thomas sausa</title>
 </head>
 <body>
     <header>
         <section>
-            <h1>ethan thomas sausa</h1>
-            <h2>web & motion</h2>
+            <h1 class="animateIn">ethan thomas sausa</h1>
+            <h2 class="animateIn">web & motion</h2>
             <div class="container">
                 <a href="#main">
-                    <div class="arrow"></div>
+                    <div class="arrow animateIn"></div>
                 </a> 
             </div>
         </section>
     </header>
     
     <main id="main">
-        <h1>projects</h1>
-        <ul id="projects">
-            <li class="card" thumb="fairHousing">
-                <h2>LIBOR rebranding</h2>                
-            </li>
-            <li class="card" thumb="fairHousing"> 
-                <h2>fair housing marketing</h2>                   
-            </li>
-            <li class="card" thumb="fairHousing">
-                <h2>hangout beta</h2>                
-            </li>
-            <li class="card">   
-                <h2>color is crazy</h2>             
-            </li>
-            <li class="card">
-                <h2>spacey</h2>                    
-            </li>
-            <li class="card">  
-                <h2>freelance web design</h2>
-            </li>
-        </ul>
+        <nav>
+            <!-- <h1>about</h1> -->
+            <h1 onclick=loadFile(this) data="projects">projects</h1>
+            <!-- <h1>bio</h1> -->
+        </nav>
+        <!-- content gets added here -->
     </main>    
 </body>
 </html>

@@ -1,9 +1,7 @@
 *Project Notes*
 
 TODO:
-1) Fix mobile margins
-    content within section grid dont cut its self down to match margins so it gets shifted off of the right shift
-2)
+
 
 
 
@@ -29,7 +27,7 @@ ANIMATION --------------------------
     The War We Alreadey Lost
 https://www.youtube.com/watch?v=egMMg3Xf5jY
     Color is Crazy
-https://www.youtube.com/watch?v=jDF3RqFewF8&t=1s
+https://youtu.be/jDF3RqFewF8
     Park Productions
 https://youtu.be/LRp53GdXbic
 
@@ -38,9 +36,15 @@ hangoutbeta ------------------------
 https://www.figma.com/proto/OziEfpY4m420FUZ9ZyjhCl/MVP?node-id=1918-6285&viewport=241%2C366%2C0.1138996109366417&scaling=scale-down
 https://www.amici.ai/
 
+
+
 Hangout
 UI/UX Design
 
 We want to help connect people by making it easier to plan hangouts. We want people to spend less time alone and bored and more time having memorable experiences.
 
 At Hangout I worked with developers to design prototypes for mobile interactions. We worked in figma to design prototypes for react native. 
+
+
+thumbnail canva file
+https://www.canva.com/design/DAFecVIRQBU/BqEa1zRlQBpsG8nNaNXuwg/edit?utm_content=DAFecVIRQBU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

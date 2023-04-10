@@ -1,0 +1,130 @@
+#projects{
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    padding: 0;
+    list-style: none;
+}
+
+/* card */
+#projects li.card{
+    position:relative;
+    box-sizing: border-box;
+    background: rgb(46, 111, 196);
+    width: 350px;
+    height: 350px;
+    padding: 1em;
+
+    background-origin: content-box;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--text);
+}
+
+/* card label */
+#projects li.card h2{
+    position: absolute;
+    bottom: 0.5em;
+    
+    text-shadow: 0.1em 0.1em 0.1em var(--background);
+    font-weight: 900;
+
+    transition: all 0.5s ease;
+
+    opacity: 0;
+}
+
+#projects li.card:hover h2{
+    opacity: 1;
+}
+
+/* hover color effect */
+#projects li.card::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display:block;
+    box-sizing: border-box;
+    width: 350px;
+    height: 350px;
+    opacity: 0.75;
+
+    transform-origin: left;
+
+    scale: 0 1;
+    transition: all 0.25s ease-out;
+}
+
+#projects li.card:hover::before{
+    scale: 1 1;
+}
+
+/* alternating colors */
+#projects li.card::before{
+    background-color: var(--cyan);
+    /* background: linear-gradient(90deg, var(--cyan), rgba(255,255,255,0)); */
+    background-color: rgba(0,0,0,0.7);
+}
+#projects li.card:nth-of-type(3n+1):before{
+    background-color: var(--cyan);
+    /* background: linear-gradient(90deg, var(--cyan), rgba(255,255,255,0)); */
+}
+
+#projects li.card:nth-of-type(3n+2):before{
+    background-color: var(--magenta);
+    /* background: linear-gradient(90deg, var(--magenta), rgba(255,255,255,0)); */
+}
+
+#projects li.card:nth-of-type(3n+3):before{
+    background-color: var(--yellow);
+    /* background: linear-gradient(90deg, var(--yellow), rgba(255,255,255,0)); */
+}
+
+/* every other background color */
+#projects li.card:nth-of-type(3n+1){
+    /* background-color: var(--cyan); */
+}
+
+#projects li.card:nth-of-type(3n+2){
+    /* background-color: var(--magenta); */
+}
+
+#projects li.card:nth-of-type(3n+3){
+    /* background-color: var(--yellow); */
+}
+
+/* project thumb */
+#projects li.card[data="projects/fairHousing"]{ 
+    background-image: url('../assets/projects/homeforallofus/HFAOU_mockup.png');
+}
+
+#projects li.card[data="projects/hangoutBeta"]{
+    background-image: url('../assets/projects/hangoutbeta/hangout_mockup.png');
+}
+
+#projects li.card[data="projects/cic"]{
+    background-image: url('../assets/projects/cic/cic_video.png');
+}
+
+
+
+/* views */
+.view-container{
+    min-height: 100vh;
+    place-items: start center ;
+}
+
+#exit{
+    float: right;
+    cursor: pointer;
+    padding: 0 5px ;
+    border: 1px white solid;
+    border-radius: 1em;
+}
+
