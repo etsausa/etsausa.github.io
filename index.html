@@ -7,31 +7,35 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
-    <script defer src="./functions/animateIn.js"></script>
-    <script src="./functions/includeHTML.js"></script>
+    <script type="module" defer src="/functions/animateIn.js"></script>
+    <script type="module" src="/script.js"></script>
+    
 
     <title>ethan thomas sausa</title>
 </head>
 <body>
     <header>
-        <section>
-            <h1 class="animateIn">ethan thomas sausa</h1>
+        <div class="grid center">
+            <h1 class="animateIn">
+                ethan thomas sausa<img id="logo" alt="additive colors icon" src="./assets/logo.svg">
+            </h1>
             <h2 class="animateIn">web & motion</h2>
-            <div class="container">
+            
+            <div class="animateIn container">
                 <a href="#main">
-                    <div class="arrow animateIn"></div>
+                    <div class="arrow"></div>
                 </a> 
             </div>
-        </section>
+        </div>
+            
     </header>
+
+    <nav>
+        <a onclick="route()" href="/about">about</a>
+        <a onclick="route()" href="/projects">projects</a>
+    </nav>
     
     <main id="main">
-        <nav>
-            <!-- <h1>about</h1> -->
-            <h1 onclick=loadFile(this) data="projects">projects</h1>
-            <!-- <h1>bio</h1> -->
-        </nav>
         <!-- content gets added here -->
     </main>    
 </body>
