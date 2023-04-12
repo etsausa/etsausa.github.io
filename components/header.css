@@ -24,6 +24,32 @@ header h2{
     font-size: 3rem;
 }
 
+#logo{
+    --logo-size: 2.5rem;
+    height: var(--logo-size);
+    width: var(--logo-size);
+
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+
+#logo:hover{
+    animation-name: turn;
+    animation-duration: 4s;
+}
+
+@keyframes turn {
+    0% {   transform: rotate(0turn);}
+    25% {  transform: rotate(6turn);}
+    50% {  transform: rotate(2turn);}
+    75% {  transform: rotate(3turn);}
+    100% { transform: rotate(0turn);}
+}
+@keyframes return{
+    from { transform: rotate(-1turn);}
+    to {   transform: rotate(0turn);}
+}
+
 .arrow{
     border-bottom: 1px var(--text) solid;
     border-right: 1px var(--text) solid;

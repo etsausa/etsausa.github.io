@@ -1,7 +1,9 @@
 @import './functions/animateIn.css';
 @import './components/header.css';
-@import './components/projects.css';
+@import './components/nav.css';
 @import './components/type.css';
+@import './views/projects.css';
+@import './views/about.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root{
@@ -22,26 +24,56 @@
     scroll-behavior:smooth;
 }
 
-body, header, main, section{
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+body, header, main {
     display: grid;
     place-items: center;
-}
-
-p{
-    max-width: 75ch;
-}
-
-main{
     min-height: 100vh;
 }
 
-nav{
-    display: flex;
-    flex: row;
+.button{
+    display: inline-block;
+    margin: 1em 1em 1em 0;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+    color: var(--cyan);
+    border: var(--cyan) 3px solid;
+    border-radius: 1em;
+
+    transition: 0.2s all ease;
 }
 
-nav>* {
-    margin: 1em 1em;
-    cursor: pointer;
+.button:hover{
+    color: var(--background);
+    background-color: var(--cyan);
+}
+
+/* utils */
+.grid{
+    display: grid;    
+}
+
+.center {
+    place-items: center;
+}
+
+.left {
+    place-items: start ;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
 }
 

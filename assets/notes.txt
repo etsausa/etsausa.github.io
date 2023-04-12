@@ -1,0 +1,50 @@
+*Project Notes*
+
+TODO:
+
+
+
+
+FAIR HOUSING MARKETING --------------
+
+Documents
+    Website
+        www.homeforallofus.org
+    Logo
+    HFAOU Poster
+    Obligation Fliers
+
+
+FREELANCE WEBSITE DESIGN ------------   
+
+    Tim enngs site
+    Kelly cambells site
+    Sdi Pro site (if i can find it)
+
+
+ANIMATION --------------------------
+
+    The War We Alreadey Lost
+https://www.youtube.com/watch?v=egMMg3Xf5jY
+    Color is Crazy
+https://youtu.be/jDF3RqFewF8
+    Park Productions
+https://youtu.be/LRp53GdXbic
+
+hangoutbeta ------------------------
+
+https://www.figma.com/proto/OziEfpY4m420FUZ9ZyjhCl/MVP?node-id=1918-6285&viewport=241%2C366%2C0.1138996109366417&scaling=scale-down
+https://www.amici.ai/
+
+
+
+Hangout
+UI/UX Design
+
+We want to help connect people by making it easier to plan hangouts. We want people to spend less time alone and bored and more time having memorable experiences.
+
+At Hangout I worked with developers to design prototypes for mobile interactions. We worked in figma to design prototypes for react native. 
+
+
+thumbnail canva file
+https://www.canva.com/design/DAFecVIRQBU/BqEa1zRlQBpsG8nNaNXuwg/edit?utm_content=DAFecVIRQBU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

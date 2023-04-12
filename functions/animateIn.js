@@ -1,4 +1,4 @@
-const animateInElements = document.querySelectorAll('.animateIn');
+var animateInElements = document.querySelectorAll('.animateIn');
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
@@ -11,10 +11,17 @@ function isElementInViewport(el) {
   );
 }
 
-function animateIn() {
+function checkForElements () {
+  animateInElements = document.querySelectorAll('.animateIn');
+}
+
+export function animateIn() {
+  checkForElements();
   animateInElements.forEach((el) => {
     if (isElementInViewport(el)) {
-      el.classList.add('animateInVisible');
+      el.classList.add('animateIn-visible');
+    } else {
+      el.classList.remove('animateIn-visible');
     }
   });
 }

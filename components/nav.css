@@ -1,0 +1,43 @@
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 99;
+}
+
+nav a{
+    margin: 0em 1em;
+
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--text);
+    
+    transition: .25s all;
+}
+
+nav a:active{
+    text-decoration: solid;
+}
+
+nav a:hover:nth-of-type(3n+1){
+    color: var(--cyan);
+}
+
+nav a:hover:nth-of-type(3n+2){
+    color: var(--magenta);
+}
+
+nav a:hover:nth-of-type(3n+3){
+    color: var(--yellow);
+}
