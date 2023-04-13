@@ -2,7 +2,7 @@ var animateInElements = document.querySelectorAll('.animateIn');
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
-  let offset = -200
+  let offset = -300
   
   return (
     rect.top >= offset &&

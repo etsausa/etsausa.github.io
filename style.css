@@ -52,6 +52,16 @@ body, header, main {
     min-height: 100vh;
 }
 
+main{
+    scroll-margin: 10vh 0 0 0;
+}
+
+section{
+    margin: 1em;
+    /* min-height: 100vh; */
+    
+}
+
 .button{
     display: inline-block;
     margin: 1em 1em 1em 0;
@@ -71,7 +81,8 @@ body, header, main {
 
 /* utils */
 .grid{
-    display: grid;    
+    display: grid;  
+    grid-auto-flow: dense;  
 }
 
 .center {
@@ -92,3 +103,22 @@ body, header, main {
     flex-direction: column;
 }
 
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: 10px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    :root{
+        font-size: 14px;
+    }
+}
