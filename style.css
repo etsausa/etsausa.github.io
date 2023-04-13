@@ -22,12 +22,27 @@
     font-size: 16px;
 
     scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    :root{
+        font-size: 14px;
+    }
 }
 
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 

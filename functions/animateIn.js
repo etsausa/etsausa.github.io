@@ -2,11 +2,12 @@ var animateInElements = document.querySelectorAll('.animateIn');
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
+  let offset = -200
   
   return (
-    rect.top >= 0 &&
+    rect.top >= offset &&
     rect.left >= 0 &&
-    rect.bottom - 30 <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom + offset <= (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
