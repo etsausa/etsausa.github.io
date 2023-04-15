@@ -2,7 +2,7 @@ var animateInElements = document.querySelectorAll('.animateIn');
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
-  let offset = -300
+  let offset = -400; //should update this to pull card height and base on that
   
   return (
     rect.top >= offset &&

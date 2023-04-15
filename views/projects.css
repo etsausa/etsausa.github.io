@@ -20,9 +20,15 @@
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     #project-list li.card{
-        --card-size: 35vw;
+        --card-size: 30vw;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #project-list li.card{
+        --card-size: 20vw;
     }
 }
 
@@ -30,25 +36,22 @@
 #project-list li.card{
 
     position:relative;
-    box-sizing: border-box;
+    
     background: rgb(46, 111, 196);
     width: var(--card-size);
     height: var(--card-size);
 
-    background-origin: content-box;
+    box-sizing: content-box;
 
+    background-origin: content-box;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  
     background-color: var(--text);
 
     transition: 0.25s all ease;
 }
-
-/* shadow */
-#project-list li.card:hover:nth-of-type(3n+1){ box-shadow: 0 0 1vh var(--cyan);}
-#project-list li.card:hover:nth-of-type(3n+2){ box-shadow: 0 0 1vh var(--magenta);}
-#project-list li.card:hover:nth-of-type(3n+3){ box-shadow: 0 0 1vh var(--yellow);}
 
 #project-list li.card a{
     position: absolute;
@@ -73,9 +76,7 @@
     opacity: 0;
 }
 
-#project-list li.card:hover h2{
-    opacity: 1;
-}
+#project-list li.card:hover h2{ opacity: 1;}
 
 /* hover color effect */
 /* color invisiable (default) */
@@ -97,16 +98,17 @@
 }
 
 /* color visable (hover)*/
-#project-list li.card:hover::before{
-    scale: 1 1;
-}
+#project-list li.card:hover::before{ scale: 1 1;}
 
 /* alternating card colors */
 #project-list li.card:nth-of-type(3n+1):before{ background-color: var(--cyan); }
-
 #project-list li.card:nth-of-type(3n+2):before{ background-color: var(--magenta); }
-
 #project-list li.card:nth-of-type(3n+3):before{ background-color: var(--yellow); }
+
+/* alternating shadow on hover */
+#project-list li.card:hover:nth-of-type(3n+1){ box-shadow: 0 0 1vh var(--cyan);}
+#project-list li.card:hover:nth-of-type(3n+2){ box-shadow: 0 0 1vh var(--magenta);}
+#project-list li.card:hover:nth-of-type(3n+3){ box-shadow: 0 0 1vh var(--yellow);}
 
 /* every other background color */
 /* unused */
@@ -118,16 +120,22 @@
 
 
 /* project thumb */
+/* 1 */
+#project-list li.card[data="libor"]{
+    background-image: url('../assets/projects/libor/libor_logo.png');
+}
 /* 2 */
-#project-list li.card[data="projects/fairHousing"]{ 
+#project-list li.card[data="fairHousing"]{ 
     background-image: url('../assets/projects/homeforallofus/HFAOU_mockup.png');
 }
 /* 3 */
-#project-list li.card[data="projects/hangoutBeta"]{
+#project-list li.card[data="hangoutBeta"]{
     background-image: url('../assets/projects/hangoutbeta/hangout_mockup.png');
 }
 /* 4 */
-#project-list li.card[data="projects/cic"]{
+#project-list li.card[data="cic"]{
     background-image: url('../assets/projects/cic/cic_video.png');
 }
+
+
 
