@@ -48,18 +48,18 @@ nav a:hover:nth-of-type(3n+3){
 }
 
 /* active */
-nav a:active{
+nav a.active{
     text-decoration: underline;
 }
 
-nav a:active:nth-of-type(3n+1){
+nav a.active:nth-of-type(3n+1){
     color: var(--cyan);
 }
 
-nav a:active:nth-of-type(3n+2){
+nav a.active:nth-of-type(3n+2){
     color: var(--magenta);
 }
 
-nav a:active:nth-of-type(3n+3){
+nav a.active:nth-of-type(3n+3){
     color: var(--yellow);
 }

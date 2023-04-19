@@ -1,7 +1,18 @@
 import { animateIn } from "./functions/animateIn.js"
 
 const route = (event) =>{
+    let nav = document.getElementsByTagName("nav")
+    nav=nav[0];
+    let children = nav.children;
+    
+    for(let element of children){
+        
+        element.classList ? element.classList.remove('active'): " "; 
+    }
+
     event = event || window.event; //captures click event into variable
+    
+    event.target.classList.add('active')
     event.preventDefault(); //override default link behavior
     window.history.pushState({},"", event.target.href); //adds route to URL
     handleLocation(); //render rotue
