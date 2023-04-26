@@ -23,6 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 0.5s all;
 }
 
 
@@ -38,11 +39,6 @@ main{
 
 section{
     margin: 1em;
-}
-
-p{
-    max-width: 75ch;
-    margin: 0 0 1rem 0;
 }
 
 .button{

@@ -1,27 +1,15 @@
 p{
     max-width: 75ch;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;;
 }
+
+
 
 h1{
     font-size: 2rem;
     text-shadow: 2px 2px 0px var(--background);
 }
-
-/* underline */
-/* h1::after{
-    content:'';
-    background-color: var(--magenta);
-    
-    width: 100%;
-    height: 0.2em;
-
-    display: inline-block;
-    position: relative;
-
-    bottom: 1.4em;
-    left: 0.2em;
-    z-index: -1;
-} */
 
 h2{
     font-size: 1.5rem;
@@ -33,4 +21,13 @@ h3{
 
 h4{
     font-size: 1rem;
+}
+
+a{
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+a:hover{
+    text-shadow: 0 0 0.2vh;
 }
