@@ -58,7 +58,7 @@ section{
     background-color: var(--cyan);
 }
 
-/* utils */
+/*layout utils */
 .grid{
     display: grid;  
     grid-auto-flow: dense;  

@@ -4,8 +4,6 @@ p{
     font-size: 1rem;;
 }
 
-
-
 h1{
     font-size: 2rem;
     text-shadow: 2px 2px 0px var(--background);
@@ -31,3 +29,4 @@ a{
 a:hover{
     text-shadow: 0 0 0.2vh;
 }
+
