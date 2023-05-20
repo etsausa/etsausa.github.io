@@ -22,13 +22,13 @@
 
 @media only screen and (min-width: 768px) {
     #project-list li.card{
-        --card-size: 30vw;
+        --card-size: 25vw;
     }
 }
 
 @media only screen and (min-width: 1200px){
     #project-list li.card{
-        --card-size: 20vw;
+        --card-size: 15vw;
     }
 }
 
