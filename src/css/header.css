@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap);
+
+    margin-top: 10px;
+}
+
+nav{
+    margin-left: auto;
+    display: flex;
+    gap: 0;
+    
+    font-size: 0.85rem;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap);
+}

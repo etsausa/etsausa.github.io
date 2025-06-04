@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "basehead.html" %}
+</head>
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+        <nav role="navigaton">
+            <ul>
+                <li><a href="/about">about</a></li>
+                <li><a href="/projects">projects</a></li>
+                <li><a href="/contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>
+        <small>with love by ethan</small> 
+    </footer>
+</body>
+</html>

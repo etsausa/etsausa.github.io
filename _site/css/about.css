@@ -1,0 +1,10 @@
+.bio{
+    display: flex;
+    align-items: center;
+    gap: var(--gap)
+}
+
+.bio-pic{
+    border-radius: 5%; 
+    float: left;
+}
