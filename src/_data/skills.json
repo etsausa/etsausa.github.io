@@ -1,0 +1,35 @@
+{
+    "VIDEO 🎥":[
+        "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "Adobe Audition",
+        "Black Magic Davinci Resolve",
+        "Black Magic Fusion"
+    ],
+
+    "DESIGN 🎨":[
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Adobe InDesign",
+        "Adobe Lightroom",
+        "Canva",
+        "Figma"
+    ],
+    "WEB & CODE 💻": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "node.js",
+        "react.js",
+        "Python",
+        "Git",
+        "Wordpress CMS",
+        "Sitefinity CMS"
+    ],
+    "MARKETING 🖼️":[
+        "Google Analytics",
+        "Constant Contact CRM",
+        "Hubspot CRM",
+        "SEO"
+    ]
+}

@@ -1,0 +1,12 @@
+<h3>
+    {{ category }}
+</h3>
+<small>
+{% for tool in tools %}
+    {% if loop.last %}
+        <span>{{ tool }}</span>
+    {% else %}
+        <span>{{ tool }}, </span>
+    {% endif %}
+{% endfor %}
+</small>

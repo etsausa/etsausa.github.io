@@ -4,8 +4,32 @@ header{
     align-items: center;
     gap: var(--gap);
 
-    margin-top: 10px;
+    margin-top: var(--gap);
+
+    width: 100%;
 }
+
+/* logo group */
+
+.logo{
+    width: 2rem;
+    rotate: -90deg;
+    display: inline;
+}
+
+.title{
+    white-space: nowrap;
+}
+
+.title-logo-group{
+    display: flex;
+    align-items: center;
+    gap: calc(var(--gap)/4);
+    text-decoration: none;
+    color: inherit;
+}
+
+/* nav */
 
 nav{
     margin-left: auto;
@@ -25,3 +49,40 @@ nav ul{
     flex-direction: row;
     gap: var(--gap);
 }
+
+nav>ul>li>a{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: inherit;
+    opacity: 75%;
+    transition: all .2s;
+}
+
+nav>ul>li>a:hover{
+    opacity: 100%;
+}
+
+nav>ul>li:nth-of-type(3n+1) a:hover{
+    color:var(--magenta) !important;
+}
+
+nav>ul>li:nth-of-type(3n+2) a:hover{
+    color: var(--cyan) !important;
+}
+
+nav>ul>li:nth-of-type(3n+3) a:hover{
+    color: var(--yellow) !important;
+} 
+
+nav>ul>li:nth-of-type(3n+1) a[aria-current="page"]{
+    color:var(--magenta) !important;
+}
+
+nav>ul>li:nth-of-type(3n+2) a[aria-current="page"]{
+    color: var(--cyan) !important;
+}
+
+nav>ul>li:nth-of-type(3n+3) a[aria-current="page"]{
+    color: var(--yellow) !important;
+} 
+

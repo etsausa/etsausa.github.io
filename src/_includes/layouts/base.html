@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include "basehead.html" %}
+    {% include "head.html" %}
+    <!-- {% block head %}{% endblock %} -->
 </head>
 <body>
     <header>
-        <h1>{{ title }}</h1>
+        <a class="title-logo-group" href="/">
+            <h1>ethan thomas sausa</h1>
+            <img src="/assets/images/logo.png" alt="logo image" class="logo">
+        </a>
+            
+        </div>
         <nav role="navigaton">
             <ul>
-                <li><a href="/about">about</a></li>
+                {%- for item in collections.nav %}
+                    <li>
+                        <a href="{{ item.url }}" {% if page.url === item.url %}aria-current="page"{% endif %} class="nav-item">
+                            {{ item.data.title }}
+                        </a>
+                    </li>
+                {%- endfor %}
+                <!-- <li><a href="/">about</a></li>
                 <li><a href="/projects">projects</a></li>
-                <li><a href="/contact">contact</a></li>
+                <li><a href="/contact">contact</a></li> -->
             </ul>
         </nav>
     </header>
