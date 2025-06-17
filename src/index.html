@@ -1,52 +1,54 @@
 ---
 layout: layouts/base.html
 title: about
+nav: true
+navOrder: 1
 ---
-<section id="bio">
-    <img width="200" height="200" class="bio-pic" alt="my face" src="./assets/images/HeadShot_Mini.jpg">
-    <div>
-        <h1>Hi, my name is Ethan. 👋</h1>
-        <br>
-        <p>I'm a multimedia professional.  </p>
-        <p><b>Video 🎥 Design 🎨 Web 💻 Marketing 🖼️ </b></p>
-        <br>
-        <p>Currently I work in digital marketing design.</p>
-        <p>Check out <a href="/projects">my projects</a> and <a href="/contact">get in touch.</a> 🤙</p>
-    </div>
-</section>
-
-<section id="skills">
-    <!-- pulls skills from skill.json -->
-    {% for category, tools in skills %}
-        <div class="skill">
-            {% include 'skill-item.html' %}
+<div id="about">
+    <section id="bio">
+        <img width="200" height="200" class="bio-pic" alt="my face" src="./assets/images/HeadShot_Mini.jpg">
+        <div>
+            <h1>Hi, my name is Ethan. 👋</h1>
+            <br>
+            <p>I'm a multimedia professional.  </p>
+            <p><b>Video 🎥 Design 🎨 Web 💻 Marketing 🖼️ </b></p>
+            <p>Currently I work in digital marketing design.</p>
+            <p>Check out <a href="/projects">my projects</a> and <a href="/contact">get in touch.</a> 🤙</p>
         </div>
-        <br>
-    {% endfor %}
-        
-</section>
+    </section>
 
-<!-- resume list -->
-<section id="resume">
-    <h2>EDUCATION</h2>
-    <ul role="list">
-        <li><strong>Emerging Media, B.S.,</strong> <i>Magna Cum Laude</i></li>
-        <li><strong>Ithaca College</strong> | 2016 - 2020</li>
-        <li>
-            <ul role="list">
-                <li><i><small>Joint computer science & communications program focused on new media</small></i></li>
-                <li><small>Web Development Minor & Animation Minor</small></li>
-            </ul>
-        </li>
-    </ul>
-<br>
-    <h2>EXPEREINCE</h2>
-    <ul role="list">
-        <!-- pull data from resume.json  -->
-        {% for job in resume %}
-            <li>
-                {% include 'resume-item.html' %}
-            </li>
+    <section id="skills">
+        <!-- pulls skills from skill.json -->
+        {% for category, tools in skills %}
+            <div class="skill">
+                {% include 'skill-item.html' %}
+            </div>
+            <br>
         {% endfor %}
-    </ul>
-</section>
+            
+    </section>
+
+    <section id="resume">
+        <h2>EDUCATION</h2>
+        <ul role="list">
+            <li><strong>Emerging Media, B.S.,</strong> <i>Magna Cum Laude</i></li>
+            <li><strong>Ithaca College</strong> | 2016 - 2020</li>
+            <li>
+                <ul role="list">
+                    <li><i><small>Joint computer science & communications program focused on new media</small></i></li>
+                    <li><small>Web Development Minor & Animation Minor</small></li>
+                </ul>
+            </li>
+        </ul>
+    <br>
+        <h2>EXPEREINCE</h2>
+        <ul role="list">
+            <!-- pull data from resume.json  -->
+            {% for job in resume %}
+                <li class="resume-item">
+                    {% include 'resume-item.html' %}
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>

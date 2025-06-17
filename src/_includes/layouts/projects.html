@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<section id="project">
+    <section id="info">
+        <h2>{{ title }}</h2>
+        <br>
+        <p>{{ description }}</p>
+        <p> <i>Tags:</i>
+            {% for tag in tags %}
+                <span class="tag">
+                    {% if loop.last %} 
+                        {{ tag }}
+                    {% else %}
+                        {{ tag }},
+                    {% endif %}
+                </span>
+            {% endfor %}
+        </p>
+    </section>
+    
+    <section id="content">
+        {{ content | safe }}
+    </section>
+</section>
+    
+    
+{% endblock %}

@@ -4,6 +4,14 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addWatchTarget("src/css/");
 
+    eleventyConfig.addCollection("nav", function(collectionApi) {
+        return collectionApi.getAll().filter(item => {
+            return item.data.nav === true;
+        }).sort((a, b) => {
+            return (a.data.navOrder || 0) - (b.data.navOrder || 0);
+        });
+    });
+
 
     return {
         dir: {

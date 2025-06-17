@@ -28,6 +28,11 @@
         <nav role="navigaton">
             <ul>
                     <li>
+                        <a href="/" aria-current="page" class="nav-item">
+                            about
+                        </a>
+                    </li>
+                    <li>
                         <a href="/projects/"  class="nav-item">
                             Projects
                         </a>
@@ -39,24 +44,25 @@
         </nav>
     </header>
     <main>
-        <section id="bio">
-    <img width="200" height="200" class="bio-pic" alt="my face" src="./assets/images/HeadShot_Mini.jpg">
-    <div>
-        <h1>Hi, my name is Ethan. 👋</h1>
-        <br>
-        <p>I'm a multimedia professional.  </p>
-        <p><b>Video 🎥 Design 🎨 Web 💻 Marketing 🖼️ </b></p>
-        <br>
-        <p>Currently I work in digital marketing design.</p>
-        <p>Check out <a href="/projects">my projects</a> and <a href="/contact">get in touch.</a> 🤙</p>
-    </div>
-</section>
+        
+            <div id="about">
+    <section id="bio">
+        <img width="200" height="200" class="bio-pic" alt="my face" src="./assets/images/HeadShot_Mini.jpg">
+        <div>
+            <h1>Hi, my name is Ethan. 👋</h1>
+            <br>
+            <p>I'm a multimedia professional.  </p>
+            <p><b>Video 🎥 Design 🎨 Web 💻 Marketing 🖼️ </b></p>
+            <p>Currently I work in digital marketing design.</p>
+            <p>Check out <a href="/projects">my projects</a> and <a href="/contact">get in touch.</a> 🤙</p>
+        </div>
+    </section>
 
-<section id="skills">
-    <!-- pulls skills from skill.json -->
-    
-        <div class="skill">
-            <h3>
+    <section id="skills">
+        <!-- pulls skills from skill.json -->
+        
+            <div class="skill">
+                <h3>
     VIDEO 🎥
 </h3>
 <small>
@@ -82,11 +88,11 @@
     
 
 </small>
-        </div>
-        <br>
-    
-        <div class="skill">
-            <h3>
+            </div>
+            <br>
+        
+            <div class="skill">
+                <h3>
     DESIGN 🎨
 </h3>
 <small>
@@ -116,11 +122,11 @@
     
 
 </small>
-        </div>
-        <br>
-    
-        <div class="skill">
-            <h3>
+            </div>
+            <br>
+        
+            <div class="skill">
+                <h3>
     WEB &amp; CODE 💻
 </h3>
 <small>
@@ -162,11 +168,11 @@
     
 
 </small>
-        </div>
-        <br>
-    
-        <div class="skill">
-            <h3>
+            </div>
+            <br>
+        
+            <div class="skill">
+                <h3>
     MARKETING 🖼️
 </h3>
 <small>
@@ -188,60 +194,63 @@
     
 
 </small>
-        </div>
-        <br>
-    
+            </div>
+            <br>
         
-</section>
+            
+    </section>
 
-<!-- resume list -->
-<section id="resume">
-    <h2>EDUCATION</h2>
-    <ul role="list">
-        <li><strong>Emerging Media, B.S.,</strong> <i>Magna Cum Laude</i></li>
-        <li><strong>Ithaca College</strong> | 2016 - 2020</li>
-        <li>
-            <ul role="list">
-                <li><i><small>Joint computer science & communications program focused on new media</small></i></li>
-                <li><small>Web Development Minor & Animation Minor</small></li>
-            </ul>
-        </li>
-    </ul>
-<br>
-    <h2>EXPEREINCE</h2>
-    <ul role="list">
-        <!-- pull data from resume.json  -->
-        
+    <section id="resume">
+        <h2>EDUCATION</h2>
+        <ul role="list">
+            <li><strong>Emerging Media, B.S.,</strong> <i>Magna Cum Laude</i></li>
+            <li><strong>Ithaca College</strong> | 2016 - 2020</li>
             <li>
-                <!-- this page controls how json data read from the resume json file will display on reumse.html -->
+                <ul role="list">
+                    <li><i><small>Joint computer science & communications program focused on new media</small></i></li>
+                    <li><small>Web Development Minor & Animation Minor</small></li>
+                </ul>
+            </li>
+        </ul>
+    <br>
+        <h2>EXPEREINCE</h2>
+        <ul role="list">
+            <!-- pull data from resume.json  -->
+            
+                <li class="resume-item">
+                    <!-- this page controls how json data read from the resume json file will display on reumse.html -->
 <span><b>Digital Marketing Designer</b></span>,
-<span>Long Island Board of REALTORS®</span> |
+<span>Long Island Board of REALTORS®</span> <br>
 <span><i><small>April 2021 - Present</small></i></span>
-            </li>
-        
-            <li>
-                <!-- this page controls how json data read from the resume json file will display on reumse.html -->
+                </li>
+            
+                <li class="resume-item">
+                    <!-- this page controls how json data read from the resume json file will display on reumse.html -->
 <span><b>IOT Specialist</b></span>,
-<span>Prosegur</span> |
+<span>Prosegur</span> <br>
 <span><i><small>December 2020 - April 2021</small></i></span>
-            </li>
-        
-            <li>
-                <!-- this page controls how json data read from the resume json file will display on reumse.html -->
+                </li>
+            
+                <li class="resume-item">
+                    <!-- this page controls how json data read from the resume json file will display on reumse.html -->
 <span><b>Shift Manager</b></span>,
-<span>Park Portable Equipment Center and Services</span> |
+<span>Park Portable Equipment Center and Services</span> <br>
 <span><i><small>August 2017 - March 2020</small></i></span>
-            </li>
-        
-            <li>
-                <!-- this page controls how json data read from the resume json file will display on reumse.html -->
+                </li>
+            
+                <li class="resume-item">
+                    <!-- this page controls how json data read from the resume json file will display on reumse.html -->
 <span><b>Motion Graphics Animator</b></span>,
-<span>Roy H. Park School of Communications</span> |
+<span>Roy H. Park School of Communications</span> <br>
 <span><i><small>September 2018 - May 2019</small></i></span>
-            </li>
+                </li>
+            
+        </ul>
+    </section>
+</div>
+
         
-    </ul>
-</section>
+        
     </main>
     <footer>
         <small>with love by ethan</small> 

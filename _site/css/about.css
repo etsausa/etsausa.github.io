@@ -1,4 +1,29 @@
+#about{
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr 1fr;;
+    grid-template-areas:
+        "bio bio"
+        "resume skills";
+}
+
+#skills{
+    grid-area: skills;
+}
+
+#resume{
+    grid-area: resume;
+}
+
+.resume-item{
+    margin-bottom: 1em;
+}
+
 #bio{
+    grid-area: bio;
+    /* margin: var(--spacing) auto; */
+
+
     display: flex;
     align-items: center;
     gap: var(--gap)

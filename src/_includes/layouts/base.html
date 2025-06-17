@@ -28,7 +28,10 @@
         </nav>
     </header>
     <main>
-        {{ content | safe }}
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
+        
     </main>
     <footer>
         <small>with love by ethan</small> 

@@ -1,0 +1,18 @@
+#project{
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
+    grid-template-areas: "content info";
+    gaP: var(--gap);
+
+    section{
+        padding-bottom: var(--spacing);
+    }
+}
+
+#info{
+    grid-area: info;
+}
+
+#content{
+    grid-area: content;
+}
