@@ -13,6 +13,11 @@ module.exports = function(eleventyConfig){
         });
     });
 
+    // //to filter out 'project' in project tag cloud
+    // eleventyConfig.addFilter("excludeTag", function(tags, tagToExclude) {
+    //     return tags.filter(tag => tag !== tagToExclude);
+    // });
+
 
     return {
         dir: {
