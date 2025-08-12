@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addWatchTarget("src/css/");
 
+    // used to dynamically generate nav links, see base.html 
     eleventyConfig.addCollection("nav", function(collectionApi) {
         return collectionApi.getAll().filter(item => {
             return item.data.nav === true;
