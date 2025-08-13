@@ -57,6 +57,12 @@ footer{
 section{
     /* padding-bottom: var(--spacing); */
 }
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2px;
+}
 
 /* elements */
 

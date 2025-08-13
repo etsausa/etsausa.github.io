@@ -31,9 +31,14 @@
 
     background-position: center;
     background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
+    transition: all 0.5s ease;
 
-    border: solid 1px var(--dark);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.project-image:hover{
+    background-size: 105%;
 }
 
 .tag{
