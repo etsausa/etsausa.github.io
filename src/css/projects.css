@@ -3,10 +3,6 @@
     grid-template-columns: 2fr 1fr;  
     grid-template-areas: "content info";
     gap: var(--gap);
-
-    section{
-        padding-bottom: var(--spacing);
-    }
 }
 
 .project-list{
@@ -14,6 +10,24 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: var(--gap);
+}
+
+@media (max-width: 1024px){
+    #project{
+        grid-template-columns: 1fr;  
+        grid-template-areas: "info" "content" ;
+    }
+
+    .project-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .project-list{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 #info{
@@ -41,6 +55,9 @@
     background-size: 105%;
 }
 
+.project-tags{
+}
+
 .tag{
     color:var(--light);
     background-color: var(--dark);
@@ -59,7 +76,7 @@
     color:var(--light);
     background-color: var(--dark);
 
-    line-height: 3em;
+    line-height: 2em;
 
     white-space: nowrap;
 

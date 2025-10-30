@@ -12,14 +12,14 @@ navOrder: 2
                 <div class="project-image" style="background-image: url('{{ project.data.thumbnail }}');"></div>
                 <div class="project-title">{{ project.data.title }}</div>
             </a>
-            <p> 
-                {% set filtered_tags = project.data.tags | reject("equalto", "projects") %} <!-- exludes projects tag -->
+            <div class="project-tags"> 
+                {% set filtered_tags = project.data.tags | reject("equalto", "projects") %} <!-- exludes `projects` tag -->
                 {% for tag in filtered_tags %}
                     <span class="tag-small">
                         <small>{{ tag }}</small>
                     </span>
                 {% endfor %}
-            </p>
+            </div>
         </li>
     {% endfor %}
 </ul>
