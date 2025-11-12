@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npx eleventy --serve",
     "build": "npx eleventy",
+    "deploy": "npx eleventy && gh-pages -d _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.1"
+    "@11ty/eleventy": "^3.1.1",
+    "gh-pages": "^6.3.0"
   }
 }
