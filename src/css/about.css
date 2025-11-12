@@ -5,10 +5,28 @@
     grid-template-areas:
         "bio bio"
         "resume skills";
+
+    @media (max-width: 750px){
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "bio"
+            "skills"
+            "resume";
+    }
 }
 
 #skills{
     grid-area: skills;
+
+    @media (max-width: 750px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+.skill{
+    margin-bottom: var(--gap);
+    margin-right: var(--gap);
 }
 
 #resume{
@@ -25,6 +43,7 @@
 
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: var(--gap)
 }
@@ -32,4 +51,15 @@
 .bio-pic{
     border-radius: 5%; 
     float: left;
+}
+
+.button{
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: var(--cyan);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    font: bold;
 }
