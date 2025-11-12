@@ -1,8 +1,15 @@
 #project{
     display: grid;
-    grid-template-columns: 2fr 1fr;  
-    grid-template-areas: "content info";
-    gap: var(--gap);
+    grid-template-columns: 1fr;  
+    grid-template-areas: "info" "content" ;
+
+    &&.sidebar{
+        grid-template-columns: 2fr 1fr; 
+        grid-template-areas: "content info";
+        gap: var(--gap);
+    }
+
+    
 }
 
 .project-list{
@@ -14,8 +21,7 @@
 
 @media (max-width: 1024px){
     #project{
-        grid-template-columns: 1fr;  
-        grid-template-areas: "info" "content" ;
+        
     }
 
     .project-list{
