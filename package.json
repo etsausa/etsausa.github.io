@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx eleventy --serve",
     "build": "npx eleventy",
-    "deploy": "npx eleventy && gh-pages -d _site",
+    "deploy": "npx eleventy && gh-pages -d _site --add",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
