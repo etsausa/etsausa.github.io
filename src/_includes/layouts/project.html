@@ -6,10 +6,10 @@
         <h2>{{ title }}</h2>
         <br>
         <p>{{ description }}</p>
-        <p> 
+        <p class="project-tags"> 
             {% set filtered_tags = tags | reject("equalto", "projects") %} <!-- exludes projects tag -->
             {% for tag in filtered_tags %}
-                <span class="tag">
+                <span class="tag" style="--tag-color: {{ tag | tagColor }}">
                     {% if loop.last %} 
                         {{ tag }}
                     {% else %}

@@ -62,25 +62,15 @@
 }
 
 .project-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
 }
 
 .tag{
     color:var(--light);
-    background-color: var(--dark);
-
-    line-height: 3em;
-
-    white-space: nowrap;
-
-    border-radius: 0.25em;
-
-    padding: 0.5em;
-    margin: 0 0.5em 0 0;
-}
-
-.tag-small{
-    color:var(--light);
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
+    background-color: var(--tag-color);
 
     line-height: 2em;
 
@@ -88,6 +78,20 @@
 
     border-radius: 0.25em;
 
-    padding: 0.2em 0.5em;
-    margin: 0 0.2em 0 0;
+    padding: 0 0.5em;
+}
+
+.tag-small{
+    color:var(--light);
+    /* background-color: var(--dark); */
+    background-color: var(--tag-color);
+
+    line-height: 1.5em;
+
+    white-space: nowrap;
+
+    border-radius: 0.25em;
+
+    padding: 0 0.5em;
+    
 }

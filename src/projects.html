@@ -6,7 +6,7 @@ navOrder: 2
 ---
 
 <ul role="list" class="project-list">
-    {% for project in collections.projects %}
+    {% for project in collections.projects | sort(false, false, "data.order")%}
         <li>
             <a href="{{ project.url }}">
                 <div class="project-image" style="background-image: url('{{ project.data.thumbnail }}');"></div>
@@ -15,7 +15,7 @@ navOrder: 2
             <div class="project-tags"> 
                 {% set filtered_tags = project.data.tags | reject("equalto", "projects") %} <!-- exludes `projects` tag -->
                 {% for tag in filtered_tags %}
-                    <span class="tag-small">
+                    <span class="tag-small" style="--tag-color: {{ tag | tagColor }}">
                         <small>{{ tag }}</small>
                     </span>
                 {% endfor %}
