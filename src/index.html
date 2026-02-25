@@ -11,7 +11,13 @@ navOrder: 1
             <h1>Hi, my name is Ethan. 👋</h1>
             <br>
             <p>I'm a multimedia professional.  </p>
-            <p><b>Video 🎥 Design 🎨 Web 💻 Marketing 🖼️ </b></p>
+            <p>
+                <span class="tag" style="--tag-color: {{ 'video' | tagColor }}">Video</span>
+                <span class="tag" style="--tag-color: {{ 'graphic-design' | tagColor }}">Design</span>
+                <span class="tag" style="--tag-color: {{ 'web-design' | tagColor }}">Web</span>
+                <span class="tag" style="--tag-color: {{ 'marketing' | tagColor }}">Marketing</span>
+            </p>
+            <!-- <p><b>Video 🎥 Design 🎨 Web 💻 Marketing 🖼️ </b></p> -->
             <p>Currently I work in digital marketing design.</p>
             <p>Check out <a href="/projects">my projects</a> and <a href="/contact">get in touch.</a> 🤙</p>
         </div>
@@ -29,6 +35,16 @@ navOrder: 1
     </section>
 
     <section id="resume">
+        <h2>EXPEREINCE</h2>
+        <ul role="list">
+            <!-- pull data from resume.json  -->
+            {% for job in resume %}
+                <li class="resume-item">
+                    {% include 'resume-item.html' %}
+                </li>
+            {% endfor %}
+        </ul>
+
         <h2>EDUCATION</h2>
         <ul role="list">
             <li><strong>Emerging Media, B.S.,</strong> <i>Magna Cum Laude</i></li>
@@ -40,16 +56,7 @@ navOrder: 1
                 </ul>
             </li>
         </ul>
-    <br>
-        <h2>EXPEREINCE</h2>
-        <ul role="list">
-            <!-- pull data from resume.json  -->
-            {% for job in resume %}
-                <li class="resume-item">
-                    {% include 'resume-item.html' %}
-                </li>
-            {% endfor %}
-        </ul>
+
         <a href="assets\files\2025_esausa_resume.pdf" download="2025_esausa_resume.pdf" class="button">
         Resume 💾
         </a>

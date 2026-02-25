@@ -29,6 +29,15 @@
     }
 }
 
+@media (max-width: 768px){
+    #project{
+        &&.sidebar{
+            grid-template-columns: 1fr; 
+            grid-template-areas: "info" "content";
+        }
+    }
+}
+
 @media (max-width: 600px){
     .project-list{
         grid-template-columns: 1fr;
