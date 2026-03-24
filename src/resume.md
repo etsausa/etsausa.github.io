@@ -1,0 +1,7 @@
+
+---
+permalink: resume/index.html
+---
+
+<meta http-equiv="refresh" content="0; url=https://docs.google.com/document/d/e/2PACX-1vRBEAQo3icaZiw7ONKsn6wTNseMSK5Rb15F_5fpOCh33vVuUNg09t_4Ead3_7vmIY-vlV_hqMaubG6e/pub">
+If you are not redirected, <a href="https://docs.google.com/document/d/e/2PACX-1vRBEAQo3icaZiw7ONKsn6wTNseMSK5Rb15F_5fpOCh33vVuUNg09t_4Ead3_7vmIY-vlV_hqMaubG6e/pub">click here</a>.

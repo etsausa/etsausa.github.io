@@ -104,3 +104,23 @@
     padding: 0 0.5em;
     
 }
+
+/* rock and sock */
+
+.badge-row {
+    display: flex;
+    flex-wrap: nowrap;   /* keep all badges on one line */
+    gap: 12px;
+    align-items: center;
+
+    & a {
+        display: flex;
+    }
+
+    & img.listen-badge {
+        flex: 1 1 0;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}

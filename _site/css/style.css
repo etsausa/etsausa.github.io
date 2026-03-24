@@ -63,6 +63,10 @@ section{
     gap:2px;
 }
 
+.space-between{
+    justify-content: space-between;
+}
+
 /* elements */
 
 p{
@@ -74,6 +78,11 @@ iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: 0;
+}
+
+iframe.vertical{
+    width: 30%;
+    aspect-ratio: 9 / 16;
 }
 
 .narrow{
