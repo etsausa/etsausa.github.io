@@ -124,3 +124,12 @@
         object-fit: contain;
     }
 }
+
+@media (max-width: 700px) {
+    .badge-row {
+        flex-wrap: wrap;
+        & a {
+            flex: 1 1 calc(50% - 6px);
+        }
+    }
+}
